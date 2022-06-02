@@ -1,0 +1,105 @@
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-red: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+    --color-body-darker: #5c5577;
+    --color-border: #ccc;
+    --border-radius: 30px;
+}
+
+/* Typography */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #999;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+p {
+    margin-top: 0;
+}
+
+.list {
+    list-style-type: none;
+}
+
+/* buttons */
+
+.btn {
+    border-radius: 20px;
+    padding: 1rem;
+    outline: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 30%;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.btn-red {
+    color: white;
+    background-color: var(--color-red);
+
+}
+
+.btn-red:hover {
+    background-color: #8B0000;
+}
+
+/* images */
+
+.image__pizzeria {
+    width: 10rem;
+}
+
+/* navigation */
+
+.nav {
+    display: flex;
+    background-color: #222;
+    justify-content: center;
+
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__item > a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.navbar__item > a:hover {
+    cursor: pointer;
+    color: #888;
+}
