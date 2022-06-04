@@ -185,12 +185,12 @@ p {
 }
 
 .menu__prices {
-
+    width: 100%;
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-row: 100px 100px 100px;
+    grid-template: 100px repeat(2,100px) / 200px repeat(3,100px);
+    justify-items: left;
+    align-items: center;
     margin-top: 2rem;
-    justify-content: space-between;
     color: var(--color-headings);
 }
 
