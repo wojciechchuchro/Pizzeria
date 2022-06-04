@@ -100,13 +100,14 @@ p {
     justify-items: center;
 }
 
-.navbar__item > a{
+.navbar__item > a {
     font-size: 3rem;
     padding: 1rem;
     text-decoration: none;
     color: var(--color-headings);
     transition: color 0.3s;
 }
+
 .navbar__item > a:hover {
     cursor: pointer;
     color: white;
@@ -136,7 +137,7 @@ p {
 
 .footer {
     width: 100%;
-    height: 5%;
+    height: 5rem;
     background-color: var(--color-coral);
     position: fixed;
     bottom: 0;
@@ -150,6 +151,7 @@ p {
 
 
 .footer__paragraph {
+    padding: 1rem;
     font-size: 1.5rem;
     color: var(--color-headings);
 }
@@ -179,21 +181,38 @@ p {
     text-align: center;
 }
 
-.headersOne {
+.headers__one {
     border-bottom: 2px solid var(--color-coral);
     margin: 0 30rem;
 }
 
 .menu__prices {
+    margin: 2rem 0;
     width: 100%;
     display: grid;
-    grid-template: 100px repeat(2,100px) / 200px repeat(3,100px);
+    grid-template: 100px repeat(2, 100px) / 40fr repeat(3, 20fr);
+    gap: 10px;
     justify-items: left;
     align-items: center;
-    margin-top: 2rem;
+    justify-content: center;
     color: var(--color-headings);
 }
 
+.menu__image__small {
+    grid-column: 2;
+    width: 70px;
+    height: 70px;
+}
+
+.menu__image__medium {
+    width: 100px;
+    height: 100px;
+}
+
+.menu__image__large {
+    width: 125px;
+    height: 125px;
+}
 
 
 /* Job Aplication */
@@ -205,7 +224,7 @@ form {
 
 .input {
 
-display: flex;
+    display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
