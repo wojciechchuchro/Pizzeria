@@ -26,6 +26,8 @@ body {
     background-color: var(--color-background);
 }
 
+/* Headers */
+
 h1, h2, h3 {
     line-height: 1.1;
     color: var(--color-headings)
@@ -45,11 +47,42 @@ h3 {
     line-height: 1.3;
 }
 
+.headers {
+    text-align: center;
+}
+
+.headers__one {
+    border-bottom: 2px solid var(--color-coral);
+    margin: 2rem 30rem;
+}
+
+.container {
+    position: relative;
+}
+
 p {
 }
 
 .list {
     list-style-type: none;
+}
+
+/* Icon */
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+.icon-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: var(--color-background);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* buttons */
@@ -132,23 +165,35 @@ p {
     margin: 0 30rem;
     padding-bottom: 2rem;
 }
+/* Collapsible */
+
+.collapsible {
+    background-color: var(--color-coral);
+}
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
 
 /* footer */
 
 .footer {
-    width: 100%;
-    height: 5rem;
-    background-color: var(--color-coral);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background: var(--color-coral);
 }
 
+.footer .container {
+
+}
 
 .footer__paragraph {
     padding: 1rem;
@@ -157,7 +202,7 @@ p {
 }
 
 /* menu */
-.menu {
+.menu-pizza{
     border-bottom: 1px solid var(--color-coral);
     margin: 0 30rem;
     display: flex;
@@ -167,34 +212,43 @@ p {
     align-content: center;
 }
 
+
+.menu-toppings {
+    margin: 2rem;
+    display: grid;
+    grid-template: 100px / repeat(5, auto);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.menu__header {
+    margin: 0;
+    grid-column: 1 / 6;
+}
+
 .menu__item {
     color: var(--color-headings);
-    margin: 3rem;
+    margin-left: 3rem;
 }
 
 .menu__list {
     list-style-type: none;
 }
 
-.headers {
-    margin-bottom: 2rem;
-    text-align: center;
-}
 
-.headers__one {
-    border-bottom: 2px solid var(--color-coral);
-    margin: 0 30rem;
-}
 
 .menu__prices {
-    margin: 2rem 0;
     width: 100%;
     display: grid;
-    grid-template: 100px repeat(2, 100px) / 40fr repeat(3, 20fr);
-    gap: 10px;
-    justify-items: left;
+    grid-template-rows: 12.5rem repeat(2, 5rem);
+    grid-template-columns: 20fr repeat(2, 20fr) 30fr;
+    gap: 1rem;
+    justify-items: center;
     align-items: center;
     justify-content: center;
+    align-content: center;
     color: var(--color-headings);
 }
 
@@ -215,6 +269,25 @@ p {
 }
 
 
+
+.breads {
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-row: repeat(4, 200px);
+    justify-items: left;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    row-gap: 1rem;
+}
+
+
+.bread__paragraph {
+    color: var(--color-body);
+    font-size: 1.5rem;
+}
+
 /* Job Aplication */
 
 form {
@@ -223,7 +296,6 @@ form {
 }
 
 .input {
-
     display: flex;
     align-items: center;
     justify-items: center;
