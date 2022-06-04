@@ -185,13 +185,37 @@ p {
 }
 
 .menu__prices {
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-row: 100px 100px 100px;
     margin-top: 2rem;
     justify-content: space-between;
     color: var(--color-headings);
 }
 
-.menu__topping {
-    margin-top: 2rem;
-    justify-content: space-between;
-    color: var(--color-headings);
+
+
+/* Job Aplication */
+
+form {
+    width: 100%;
+    padding: 2rem;
 }
+
+.input {
+
+display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.input__first {
+
+}
+
+
+
+
