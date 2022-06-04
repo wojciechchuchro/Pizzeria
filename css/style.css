@@ -104,43 +104,50 @@ p {
     background-color: var(--color-background);
 }
 
-/* images */
-
-.image__pizzeria {
-    width: 10rem;
-}
-
 /* navigation */
 
+.logo {
+    width: 8rem;
+    height: 8rem;
+}
+
 .nav {
+    background-color: var(--color-coral);
     display: flex;
-    background-color: #FF7F50;
-    justify-content: center;
-}
-
-.nav > a {
-    margin-top: 1rem;
-}
-
-.navbar__list {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
-}
-
-.navbar__item > a {
-    font-size: 3rem;
+    flex-wrap: wrap;
     padding: 1rem;
-    text-decoration: none;
-    color: var(--color-headings);
-    transition: color 0.3s;
 }
 
-.navbar__item > a:hover {
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+}
+
+.nav__toggler {
+    opacity: .5;
+    transition: box-shadow 0.15s;
     cursor: pointer;
-    color: white;
+}
+
+.nav__list {
+    width: 100%
+}
+
+.nav__item {
+    padding: .5rem 2rem;
+    border-bottom: 1px solid var(--color-headings);
+}
+
+.nav__item > a {
+    color: var(--color-headings);
+    transition: color .3s;
+}
+
+.nav__item > a:hover {
+    color: #fff;
 }
 
 /* About us*/
@@ -179,7 +186,7 @@ p {
     font-size: 3rem;
 }
 
-.collapsible__chevron{
+.collapsible__chevron {
     transform: rotate(-90deg);
     transition: transform 0.3s;
 }
@@ -203,8 +210,8 @@ p {
 /* footer */
 
 .footer {
-    width:100%;
-    height:60px;
+    width: 100%;
+    height: 60px;
     background: var(--color-coral);
 }
 
@@ -232,12 +239,13 @@ p {
     font-size: 1.5rem;
     color: var(--color-headings);
 }
+
 .footer__section .list {
     margin-top: 1rem;
 }
 
 /* menu */
-.menu-pizza{
+.menu-pizza {
     border-bottom: 1px solid var(--color-coral);
     margin: 0 30rem;
     display: flex;
@@ -277,7 +285,6 @@ p {
 a {
     text-decoration: none;
 }
-
 
 
 .menu__prices {
@@ -351,6 +358,7 @@ form {
 .container {
     background-color: var(--color-coral);
 }
+
 /* Grid */
 
 .grid {
@@ -359,7 +367,6 @@ form {
     justify-content: center;
     justify-items: center;
 }
-
 
 
 /* Media */
@@ -402,6 +409,24 @@ form {
     }
 }
 
+/* Nav media*/
 
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        visibility: hidden;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav__item {
+        border: 0;
+    }
+}
 
 
