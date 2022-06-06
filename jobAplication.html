@@ -23,17 +23,36 @@
 </nav>
 
 <h1 class="headers headers__one">Job Aplication</h1>
+<div class="input">
+	<form class="job-aplication" action="">
+		<input class="input__styles" type="text" placeholder="*First"/>
+		<input class="input__styles" type="text" placeholder="*Last"/>
+		<input class="input__styles" type="email" placeholder="*Email"/>
+		<input class="input__styles" type="number" placeholder="*Phone"/>
+		<h2>Address</h2>
+		<input class="input__styles" type="text" placeholder="Street Address"/>
+		<input class="input__styles" type="text" placeholder="Street Address 2"/>
+		<input class="input__styles" type="text" placeholder="City"/>
+		<input class="input__styles" type="text" placeholder="State / Region"/>
+		<input class="input__styles" type="text" placeholder="Postal / Zip Code"/>
+		<input class="input__styles" type="text" placeholder="Country"/>
+		<h2>Date of Birth * </h2>
+		<input class="input__styles" type="date"/>
+		<div class="radio">
+			<h2 class="radio__header">Store you are applying to: *</h2>
+			<input class="input__radio " type="radio" id="kalida" name="fav_language" value="HTML">
+			<label for="kalida">Kalida</label>
+			<input class="input__radio " type="radio" name="fav_language" id="leipsic" value="CSS">
+			<label for="leipsic">Leipsic</label><br>
+			<input class="input__radio " type="radio" id="grove" name="fav_language" value="JavaScript">
+			<label for="grove">Grove</label>
+			<textarea rows="6" cols="100%" placeholder="Previous Employment" class="input__styles"></textarea>
 
-
-	<div class="input">
-			<form  action="">
-			<label><input type="text" /> Input1</label>
-			<label><input type="text" /> Input1</label>
-			<label><input type="text" /> Input1</label>
-			<label><input type="text" /> Input1</label>
-			</form>
-	</div>
-
+		</div>
+		<button type="submit" class="btn btn-red">Submit</button>
+		<button type="reset" class="btn btn-red">Reset</button>
+	</form>
+</div>
 
 
 <footer class="footer">
