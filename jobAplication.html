@@ -18,29 +18,28 @@
 		<li class="nav__item"><a href="index.html">Home</a></li>
 		<li class="nav__item"><a class="navbar__a" href="menu.html">Menu</a></li>
 		<li class="nav__item"><a class="navbar__a" href="jobAplication.html">Job Aplication</a></li>
-		<li class="nav__item"><a class="navbar__a" href="#">Location</a></li>
 	</ul>
 </nav>
 
 <h1 class="headers headers__one">Job Aplication</h1>
 <div class="input">
 	<form class="job-aplication" action="">
-		<input class="input__styles" type="text" placeholder="*First"/>
-		<input class="input__styles" type="text" placeholder="*Last"/>
-		<input class="input__styles" type="email" placeholder="*Email"/>
-		<input class="input__styles" type="number" placeholder="*Phone"/>
-		<h2>Address</h2>
+		<input required class="input__styles" type="text" placeholder="*First"/>
+		<input required class="input__styles" type="text" placeholder="*Last"/>
+		<input required class="input__styles" type="email" placeholder="*Email"/>
+		<input required class="input__styles" type="number" placeholder="*Phone"/>
+		<h2 class="input__header">Address</h2>
 		<input class="input__styles" type="text" placeholder="Street Address"/>
 		<input class="input__styles" type="text" placeholder="Street Address 2"/>
 		<input class="input__styles" type="text" placeholder="City"/>
 		<input class="input__styles" type="text" placeholder="State / Region"/>
 		<input class="input__styles" type="text" placeholder="Postal / Zip Code"/>
 		<input class="input__styles" type="text" placeholder="Country"/>
-		<h2>Date of Birth * </h2>
-		<input class="input__styles" type="date"/>
+		<h2 class="input__header">Date of Birth * </h2>
+		<input required class="input__styles" type="date"/>
 		<div class="radio">
 			<h2 class="radio__header">Store you are applying to: *</h2>
-			<input class="input__radio " type="radio" id="kalida" name="fav_language" value="HTML">
+			<input required class="input__radio " type="radio" id="kalida" name="fav_language" value="HTML">
 			<label for="kalida">Kalida</label>
 			<input class="input__radio " type="radio" name="fav_language" id="leipsic" value="CSS">
 			<label for="leipsic">Leipsic</label><br>
@@ -49,7 +48,7 @@
 			<textarea rows="6" cols="100%" placeholder="Previous Employment" class="input__styles"></textarea>
 
 		</div>
-		<button type="submit" class="btn btn-red">Submit</button>
+		<button onClick="addAplication()" class="btn btn-red">Submit</button>
 		<button type="reset" class="btn btn-red">Reset</button>
 	</form>
 </div>
@@ -76,7 +75,7 @@
 		<section class="collapsible footer__section">
 			<div class="header collapsible__header">
 				<h2 class="header collapsible__heading footer__heading">Keep Connect</h2>
-				<span class="icon-container collapsible__chevron"><img class="icon " src="./images/dot.svg" alt="pizza icon">
+				<span class="icon-container collapsible__chevron"><img class="icon" src="./images/dot.svg" alt="pizza icon">
 			</span>
 			</div>
 			<div class="collapsible__content">
@@ -89,8 +88,8 @@
 		</section>
 		<section class="collapsible footer__section">
 			<div class="header collapsible__header">
-				<h2 class="header collapsible__heading footer__heading">Contact Information</h2>
-				<span class="icon-container collapsible__chevron"><img class="icon " src="./images/dot.svg" alt="pizza icon">
+				<h2 class="header collapsible__heading footer__heading">Contact</h2>
+				<span class="icon-container collapsible__chevron"><img class="icon" src="./images/dot.svg" alt="pizza icon">
 			</span>
 			</div>
 			<div class="collapsible__content">
@@ -105,7 +104,9 @@
 		</section >
 	</div>
 </footer>
+
+<script src="js/localStorage.js"></script>
 <script src="https://kit.fontawesome.com/ab3fa76bea.js" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<script src="js/collapsible.js"></script>
 </body>
 </html>
