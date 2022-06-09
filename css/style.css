@@ -350,6 +350,16 @@ form {
     text-align: left;
 }
 
+.input__checkbox {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
 .radio {
     display: flex;
     justify-content: center;
