@@ -5,22 +5,19 @@ function addAplication() {
     let date = document.getElementById("input__date").value
     let previous = document.getElementById("input__previous").value
     let values = `Name: ${name}, LastName: ${last}, Email: ${email}, BirthDate: ${date}, Previous emplyment: ${previous}, `
-
     let key = document.getElementById("key").value
     localStorage.setItem(key, values)
 }
 
-
 function showAplication() {
     let output = document.getElementById("content")
     let key, text = ''
-    key = localStorage.key(0)
 
+    key = localStorage.key(0)
     text = `<p> ${localStorage.getItem(key)} PhoneNumber: ${localStorage.key(0)} </p>`
     output.innerHTML = text
 }
 
 function clear() {
-    console.log('jd')
     localStorage.clear()
 }

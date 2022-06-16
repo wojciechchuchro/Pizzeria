@@ -4,9 +4,6 @@
     --color-red: #ff3400;
     --color-headings: #8B0000;
     --color-body: #918ca4;
-    --color-body-darker: #5c5577;
-    --color-border: #ccc;
-    --border-radius: 30px;
 }
 
 /* Typography */
@@ -55,12 +52,13 @@ h3 {
     border-bottom: 2px solid var(--color-coral);
 }
 
-
-p {
-}
-
 .list {
     list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Icon */
@@ -69,7 +67,6 @@ p {
     width: 3rem;
     height: 3rem;
 }
-
 
 .icon-container {
     cursor: pointer;
@@ -118,11 +115,6 @@ p {
 
 /* navigation */
 
-.logo {
-    width: 8rem;
-    height: 8rem;
-}
-
 .nav {
     background-color: var(--color-coral);
     display: flex;
@@ -130,6 +122,11 @@ p {
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem;
+}
+
+.nav__logo {
+    width: 8rem;
+    height: 8rem;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -141,7 +138,6 @@ p {
     opacity: .5;
     transition: box-shadow 0.15s;
     cursor: pointer;
-
 }
 
 .nav__list {
@@ -160,24 +156,6 @@ p {
 
 .nav__item > a:hover {
     color: #fff;
-}
-
-/* About us*/
-
-.about {
-    display: flex;
-    flex-direction: column;
-}
-
-.about__header {
-    text-align: center;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--color-coral);
-}
-
-.about__paragraph {
-    padding-bottom: 2rem;
-    margin: 0 2rem;
 }
 
 /* Collapsible */
@@ -255,6 +233,24 @@ p {
     margin-top: 1rem;
 }
 
+/* About us*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__header {
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-coral);
+}
+
+.about__paragraph {
+    padding-bottom: 2rem;
+    margin: 0 2rem;
+}
+
 /* Menu */
 
 .menu__header {
@@ -266,16 +262,6 @@ p {
     color: var(--color-headings);
     margin-left: 3rem;
     margin-top: 7rem;
-}
-
-.list {
-    text-decoration: none;
-}
-
-/* Anchor */
-
-a {
-    text-decoration: none;
 }
 
 /* Pizza */
@@ -300,7 +286,7 @@ a {
     font-size: 3rem;
     display: grid;
     grid-template-columns: 50%;
-    grid-template-row: repeat(4, 200px);
+    grid-template-rows: repeat(4, 200px);
     justify-items: left;
     align-items: center;
     justify-content: center;
@@ -359,8 +345,7 @@ form {
 }
 
 
-
-.radio {
+.input__radio {
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -546,6 +531,7 @@ label {
     .aplication__header {
         font-size: 3.5rem;
     }
+
     .btn-large {
         width: 15%;
     }

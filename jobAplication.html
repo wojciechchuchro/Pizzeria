@@ -6,13 +6,12 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Menus</title>
-	<link rel="icon" href="images/pizza-slice-solid.svg" type="image/icon type">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <nav class="nav collapsible ">
-	<a><img class="logo" src="images/logo.png" alt=""></a>
+	<a><img class="nav__logo" src="images/logo.png" alt=""></a>
 	<a><i class="fas fa-align-justify nav__toggler"></i></a>
 	<ul class="list nav__list collapsible__content">
 		<li class="nav__item"><a href="index.html">Home</a></li>
@@ -23,29 +22,31 @@
 
 <h1 class="headers headers__one">Job Aplication</h1>
 <div class="input">
-	<form class="job-aplication" action="" method="get">
-		<input required class="input__styles" type="text" pattern="^[A-Z][a-z]{1,20}"  placeholder="*First must start with capital letter" id="input__first"/>
-		<input required class="input__styles" type="text" pattern="^[A-Z][a-z]{1,20}" placeholder="*Last must start with capital letter" id="input__last"/>
+	<form class="job-aplication" action="#" method="get">
+		<input required class="input__styles" type="text" pattern="^[A-Z][a-z]{1,20}"
+			   placeholder="*First must start with capital letter" id="input__first"/>
+		<input required class="input__styles" type="text" pattern="^[A-Z][a-z]{1,20}"
+			   placeholder="*Last must start with capital letter" id="input__last"/>
 		<input required class="input__styles" type="email" placeholder="*Email" id="input__email"/>
 		<input required class="input__styles" type="text" pattern="[0-9]{9}" placeholder="*Phone 9 numbers" id="key"/>
-
 		<h2 class="input__header">Date of Birth * </h2>
 		<input required class="input__styles" type="date" id="input__date"/>
 
-		<div class="radio">
-			<h2 class="radio radio__header">Preffered job: *</h2>
-			<input  class="input__radio " type="radio" id="kalida" name="fav_language" value="HTML">
+		<div class="input__radio">
+			<h2 class="input__radio radio__header">Preffered job: *</h2>
+			<input class="input__radio " type="radio" id="kalida" name="fav_language" value="HTML">
 			<label for="kalida">Chef</label>
 			<input class="input__radio " type="radio" name="fav_language" id="leipsic" value="CSS">
 			<label for="leipsic">Dishwasher</label><br>
 			<input class="input__radio " type="radio" id="grove" name="fav_language" value="JavaScript">
 			<label for="grove">Supplier</label>
-			<textarea required rows="6" cols="100%" placeholder="Previous Employment" class="input__styles"></textarea>
+			<textarea required rows="6" cols="10" placeholder="Previous Employment" class="input__styles"
+					  id="input__previous"></textarea>
 			<div class="input__checkbox">
-			<input  required type="checkbox" id="checkbox_1">
-			<label for="checkbox_1"> I accept politicy of privacy</label><br>
-			<input type="checkbox" id="checkbox_2">
-			<label for="checkbox_2"> I wan't to get emails from our company</label>
+				<input required type="checkbox" id="checkbox_1">
+				<label for="checkbox_1"> I accept politicy of privacy</label><br>
+				<input type="checkbox" id="checkbox_2">
+				<label for="checkbox_2"> I wan't to get emails from our company</label>
 			</div>
 		</div>
 		<button class="btn btn-red" onclick="addAplication()">Submit</button>
@@ -55,8 +56,8 @@
 
 <h2 class="headers aplication__header">Your Aplication</h2>
 <div class="aplication">
-<button class="btn-large btn-red" onclick="showAplication()">Show your aplication</button>
-<button class="btn-large btn-red" onclick="clear()">Delete aplication</button>
+	<button class="btn-large btn-red" onclick="showAplication()">Show your aplication</button>
+	<button class="btn-large btn-red" onclick="showAplication()">Delete aplication</button>
 	<div id="content"></div>
 </div>
 
@@ -65,7 +66,8 @@
 		<section class="collapsible collapsible footer__section">
 			<div class="header collapsible__header">
 				<h2 class="header collapsible__heading footer__heading">Restaurants</h2>
-				<span class="icon-container collapsible__chevron"><img class="icon " src="./images/dot.svg" alt="pizza icon">
+				<span class="icon-container collapsible__chevron"><img class="icon " src="./images/dot.svg"
+																	   alt="pizza icon">
 			</span>
 			</div>
 			<div class="collapsible__content">
@@ -81,7 +83,8 @@
 		<section class="collapsible footer__section">
 			<div class="header collapsible__header">
 				<h2 class="header collapsible__heading footer__heading">Keep Connect</h2>
-				<span class="icon-container collapsible__chevron"><img class="icon" src="./images/dot.svg" alt="pizza icon">
+				<span class="icon-container collapsible__chevron"><img class="icon" src="./images/dot.svg"
+																	   alt="pizza icon">
 			</span>
 			</div>
 			<div class="collapsible__content">
@@ -95,7 +98,8 @@
 		<section class="collapsible footer__section">
 			<div class="header collapsible__header">
 				<h2 class="header collapsible__heading footer__heading">Contact</h2>
-				<span class="icon-container collapsible__chevron"><img class="icon" src="./images/dot.svg" alt="pizza icon">
+				<span class="icon-container collapsible__chevron"><img class="icon" src="./images/dot.svg"
+																	   alt="pizza icon">
 			</span>
 			</div>
 			<div class="collapsible__content">
@@ -107,13 +111,12 @@
 					</ul>
 				</div>
 			</div>
-		</section >
+		</section>
 	</div>
 </footer>
 
 <script src="https://kit.fontawesome.com/ab3fa76bea.js" crossorigin="anonymous"></script>
 <script src="js/localStorage.js"></script>
 <script src="js/collapsible.js"></script>
-
 </body>
 </html>
